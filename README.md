@@ -4,11 +4,11 @@ A powerful, canvas-based project management tool inspired by Notion, Figma, and 
 
 ## Access the Site
 
-The application is running as a web site. In GitHub Codespaces, access it at:
+The application is deployed on GitHub Pages at:
 
-**https://rommentgrame-friendly-eureka-5pwqvrgwgxp37659.github.dev**
+**https://rommentgrame.github.io/LAVA/**
 
-If running locally, go to http://localhost:3000
+For local development, run the servers as described below.
 
 ## Features
 
