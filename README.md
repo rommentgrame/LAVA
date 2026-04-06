@@ -2,6 +2,14 @@
 
 A powerful, canvas-based project management tool inspired by Notion, Figma, and Miro.
 
+## Access the Site
+
+The application is running as a web site. In GitHub Codespaces, access it at:
+
+**https://rommentgrame-friendly-eureka-5pwqvrgwgxp37659.github.dev**
+
+If running locally, go to http://localhost:3000
+
 ## Features
 
 - Intelligent canvas for visual project structuring
@@ -16,10 +24,19 @@ A powerful, canvas-based project management tool inspired by Notion, Figma, and 
 - **Backend**: Node.js, Express, TypeScript, Prisma, SQLite
 - **Authentication**: JWT
 
-## Installation
+## Installation (for local development)
 
 1. Clone the repository
 2. Install dependencies for frontend and backend
+
+### Backend
+```bash
+cd backend
+npm install
+npm run prisma:generate
+npm run prisma:db:push
+npm run dev
+```
 
 ### Frontend
 ```bash
@@ -28,34 +45,13 @@ npm install
 npm run dev
 ```
 
-### Backend
-```bash
-cd backend
-npm install
-npm run prisma:migrate
-npm run prisma:generate
-npm run dev
-```
-
-3. Set up environment variables
-
-Create `.env` in backend:
-```
-JWT_SECRET=your_secret_key
-DATABASE_URL="file:./dev.db"
-GITHUB_TOKEN=your_github_token
-GITHUB_USERNAME=your_username
-```
+3. Set up environment variables in backend/.env
 
 ## Usage
 
-- Start the backend server on port 5000
-- Start the frontend on port 3000
-- Open http://localhost:3000
-
-## GitHub Integration
-
-The app is designed to integrate with GitHub for automatic pushing, versioning, and collaboration. Set the GITHUB_TOKEN in the backend .env to enable GitHub operations.
+- Backend runs on port 5000
+- Frontend on port 3000
+- Add elements by clicking buttons, drag to move
 
 ## License
 
